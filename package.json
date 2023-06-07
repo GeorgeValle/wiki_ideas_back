@@ -1,0 +1,29 @@
+{
+  "name": "wiki_ideas_back",
+  "version": "1.0.0",
+  "description": "Back of Wiki_ideas",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeValle/wiki_ideas_back.git"
+  },
+  "author": "George_valle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgeValle/wiki_ideas_back/issues"
+  },
+  "homepage": "https://github.com/GeorgeValle/wiki_ideas_back#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "mongodb": "^5.6.0",
+    "mongoose": "^7.2.2"
+  }
+}
