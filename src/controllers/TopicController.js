@@ -33,8 +33,7 @@ class Topic{
 
             const {id_topic} = req.params
             if (!id_topic) return res.status(400).json( {message: "Id required"});
-            console.log(id_topic);
-            typeof(id_topic)
+            
             const objDAO = await topicModel.findOne({ _id: id_topic });;
             if(!objDAO) throw new Error();
             //return objDAO;
