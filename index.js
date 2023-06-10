@@ -2,6 +2,9 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
+//cors
+import cors from 'cors';
+
 //Config server Express
 import express from 'express';
 
@@ -42,8 +45,13 @@ if (modoCluster && cluster.isPrimary) {
     //middleware of json
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
+    app.use(cors());
+
 
     //route
+    app.get('/', (req, res)=>{
+        res.send("Home Page");
+    })
     app.use('/topics',topicRouter);
 
 
