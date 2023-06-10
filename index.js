@@ -44,9 +44,6 @@ if (modoCluster && cluster.isPrimary) {
     app.use(express.urlencoded({ extended: true }));
 
     //route
-    app.use('/', (req, res)=>{
-        res.send("Home Page");
-    })
     app.use('/topics',topicRouter);
 
 
