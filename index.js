@@ -50,7 +50,7 @@ if (modoCluster && cluster.isPrimary) {
 
     //route
     app.get('/', (req, res)=>{
-        res.status(200).json({message:"Home Page"});
+        res.status(200).send("Hello, world!");
     })
     app.use('/topics',topicRouter);
 
