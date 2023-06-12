@@ -1,0 +1,17 @@
+# fly.toml app configuration file generated for wiki-ideas-back on 2023-06-12T00:22:48-03:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "wiki-ideas-back"
+primary_region = "eze"
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+
+  
+
